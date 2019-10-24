@@ -1,12 +1,14 @@
 import java.io.File
+import org.opencv.core.Core
 
 object Main {
 
   def main (args: Array[String]): Unit = {
 
+    System.out.println("Welcome to OpenCV " + Core.VERSION)
+
     val inputPath:String = "C:\\Users\\Arkadiusz\\Desktop\\ScalaC\\photosAll_in"
     val outputPath: String = "C:\\Users\\Arkadiusz\\Desktop\\ScalaC\\photos_out"
-
 
     getListOfFiles(inputPath).foreach{println}
 
